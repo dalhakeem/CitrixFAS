@@ -98,8 +98,7 @@ All users have access to public key infrastructure (PKI) certificates within the
 
 This deployment adds a new server running the FAS, which is authorized to issue smart card class certificates on behalf of users. These certificates are then used to log on to user sessions in a Citrix HDX environment as if a smart card logon was used.
 
-localized image
-
+![alt text](https://user-images.githubusercontent.com/82611568/114958680-1ea66080-9e29-11eb-9751-f50d1388843c.png)
 The XenApp or XenDesktop environment must be configured similarly as smart card logon
 
 In an existing deployment, this usually involves only ensuring that a domain-joined Microsoft certificate authority (CA) is available, and that domain controllers have been assigned domain controller certificates. (See the “Issuing Domain Controller Certificates” section in CTX206156.)

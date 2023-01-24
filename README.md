@@ -1,14 +1,34 @@
-# CitrixFAS
+# Citrix FAS
 
-The Federated Authentication Service (FAS) is a Citrix component that integrates with your Active Directory certificate authority (CA), allowing users to be seamlessly authenticated within a Citrix environment. This document describes various authentication architectures that may be appropriate for your deployment.
+A remote access solution for secure and reliable access to applications and data.
 
-When enabled, the FAS delegates user authentication decisions to trusted StoreFront servers. StoreFront has a comprehensive set of built-in authentication options built around modern web technologies and is easily extensible using the StoreFront SDK or third-party IIS plugins. The basic design goal is that any authentication technology that can authenticate a user to a web site can now be used to log in to a Citrix XenApp or XenDesktop deployment.
+## Description
 
-This document covers some examples of top-level deployment architectures, in increasing complexity.
+Citrix FAS (File Access Services) is a remote access solution that provides users with secure and reliable access to their applications and data from any device. With Citrix FAS, users can access their files and applications from anywhere, at any time, and on any device.
 
+## Features
 
+- Secure access to files and applications
+- Remote access from any device
+- Reliable and fast file transfer
+- Easy to set up and use
 
-How it works
-The FAS is authorized to issue smart card class certificates automatically on behalf of Active Directory users who are authenticated by StoreFront. This uses similar APIs to tools that allow administrators to provision physical smart cards. When a user is brokered to a Citrix XenApp or XenDesktop Virtual Delivery Agent (VDA), the certificate is attached to the machine, and the Windows domain sees the logon as a standard smart card authentication. The Citrix Federated Authentication Service is a privileged component designed to integrate with Active Directory Certificate Services. It dynamically issues certificates for users, allowing them to log on to an Active Directory environment as if they had a smart card. This allows StoreFront to use a broader range of authentication options, such as SAML (Security Assertion Markup Language) assertions. SAML is commonly used as an alternative to traditional Windows user accounts on the Internet. The following diagram shows the Federated Authentication Service integrating with a Microsoft Certification Authority and providing support services to StoreFront and XenApp and XenDesktop Virtual Delivery Agents (VDAs).
+## Installation
 
-For more information check <a href="https://github.com/dalhakeem/CitrixFAS/wiki">Wiki Link</a> 2021-05-04
+1. Download the Citrix FAS installer from the official website
+2. Run the installer and follow the on-screen instructions
+3. Log in to the Citrix FAS portal using your credentials
+
+## Usage
+
+1. Open the Citrix FAS app on your device
+2. Log in using your credentials
+3. Access your files and applications
+
+## Contributing
+
+If you would like to contribute to the development of Citrix FAS, please contact the development team.
+
+## License
+
+Citrix FAS is licensed under the [Citrix End User License Agreement](https://www.citrix.com/legal/licensing/end-user-license-agreement.html)
